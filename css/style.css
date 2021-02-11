@@ -14,10 +14,10 @@
 *:before,
 *:after {
     box-sizing: inherit;
-    /* para que no afecte el tamaño cuando metes padding o border */
+    /* para que no afecte el tamaño cuando metes padding, margin y discor border */
 }
 
 body{    
     font-size: 16px;
     /* 1rem = 10px */
-}
+}                                                                                                                                       
