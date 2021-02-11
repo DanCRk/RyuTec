@@ -1,5 +1,23 @@
+:root{
+    --principal: #D86C6C;
+    --gris-oscuro: #2b2b2b;
+}
+
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;700&display=swap');
-html{
-    box-sizing: border-box;
-    font-family: 'Montserrat', sans-serif;
+    html{
+        box-sizing: border-box;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 62.5%;
+    }
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+    /* para que no afecte el tamaño cuando metes padding o border */
+}
+
+body{    
+    font-size: 16px;
+    /* 1rem = 10px */
 }
