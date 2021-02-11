@@ -1,6 +1,8 @@
 :root{
     --principal: #D86C6C;
     --gris-oscuro: #2b2b2b;
+    --casiblanco: #f0f0f0;
+    --gris-texto: #141414;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;700&display=swap');
@@ -20,4 +22,21 @@
 body{    
     font-size: 16px;
     /* 1rem = 10px */
-}                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     
+}          
+.contenedor{
+    width:120rem;
+    margin: 0 auto;
+}
+
+.boton{
+    background-color:var(--principal);
+    color: var(--casiblanco);
+    padding: 1rem 3rem;
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 0.7rem;
+    text-align: center;
+}
