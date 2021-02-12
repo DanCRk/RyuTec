@@ -22,9 +22,10 @@
 body{    
     font-size: 16px;
     /* 1rem = 10px */
-}          
-.contenedor{
-    width:120rem;
+}    
+
+.contenedor {
+    max-width: 120rem;
     margin: 0 auto;
 }
 
@@ -39,4 +40,11 @@ body{
     font-weight: bold;
     border-radius: 0.7rem;
     text-align: center;
+}
+
+.portada-caja{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
