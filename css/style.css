@@ -1,50 +1,92 @@
-:root{
-    --principal: #D86C6C;
-    --gris-oscuro: #2b2b2b;
-    --casiblanco: #f0f0f0;
-    --gris-texto: #141414;
+/* GOOGLE FONT */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700;900&display=swap');
+
+/* VARIABLES */
+:root {
+    --blanco: #FFFFFF;
+    --oscuro: #212121;
+    --primario: #cf5454;
+    --transparente: rgba(255, 255, 255, 0.705);
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;700&display=swap');
-    html{
-        box-sizing: border-box;
-        font-family: 'Montserrat', sans-serif;
-        font-size: 62.5%;
-    }
-
-*,
-*:before,
-*:after {
-    box-sizing: inherit;
-    /* para que no afecte el tamaño cuando metes padding, margin y discor border */
+/* ESTILOS HTML */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+html {
+    font-size: 62.5%;
+}
+body {
+    font-size: 16px; /* 1 rem equivale a 10px*/
 }
 
-body{    
-    font-size: 16px;
-    /* 1rem = 10px */
-}    
-
-.contenedor {
-    max-width: 120rem;
-    margin: 0 auto;
-}
-
-.boton{
-    background-color:var(--principal);
-    color: var(--casiblanco);
-    padding: 1rem 3rem;
-    margin-top: 1rem;
-    font-size: 1.2rem;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-weight: bold;
-    border-radius: 0.7rem;
-    text-align: center;
-}
-
-.portada-caja{
+/* ESTILOS MENU */
+.flex{
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+}
+.contenedor{
+    margin: 0 auto;
+    justify-content: space-evenly;
+}
+
+.contenedor .imgbox{
+    width: 40rem;
+    padding: 1.5rem;
+    justify-content: flex-start;
+}
+.contenedor .imgbox img{
+    width: 5.1rem;
+}
+.contenedor .imgbox p{
+    padding: 1.7rem;
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+.contenedor a{
+    padding: 3rem;
+    text-decoration: none;
+    font-size: 1.6rem;
+    color: var(--oscuro);
+    transition: all 0.2s linear 0.2s;
+}
+.contenedor a:hover{
+    color: var(--blanco);
+    background-color: var(--primario);
+    cursor: pointer;
+    border-radius: 25%;
+}
+header{
+    position: fixed;
+    width: 100%;
+    background-color: var(--transparente);
+}
+
+/* PORTADA */
+
+.portada{
+    width: 120rem;
+    height: 100rem;
+}
+.portada .titulo{
+    width: 60rem;
+    padding: 25rem 10rem;
+    font-size: 4rem;
+    font-weight: 400;
+    display: inline;
+    float: left;
+}
+.portada .titulo span{
+    font-weight: 700;
+    color: var(--primario);
+}
+.portada .imgP{
+    width: 60rem;
+    padding: 9rem 0rem 5rem 5rem;
+    float: right;
+}
+.portada .imgP img{
+    width: 68rem;
 }
