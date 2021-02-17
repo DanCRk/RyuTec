@@ -5,7 +5,7 @@
 :root {
     --blanco: #FFFFFF;
     --oscuro: #212121;
-    --primario: #cf5454;
+    --primario: #d86c6c;
     --transparente: rgba(255, 255, 255, 0.705);
 }
 
@@ -39,6 +39,13 @@ body {
     border-radius: 4rem;
     width: 80%;
     text-align: center;
+}
+
+.sombra {
+    box-shadow: 0px 5px 15px -2px rgba(112, 112, 112, 0.54);
+    background-color: var(--blanco);
+    border-radius: 2rem;
+    padding: 2rem;
 }
 
 /* ESTILOS MENU */
@@ -122,18 +129,56 @@ header{
     font-size: 3rem;
 }
 
+.servicios h3{
+    padding-bottom: 2rem;
+    font-weight: normal;
+    font-size: 2rem;
+}
+
+.servicios p{
+    color: #707070;
+}
+
 .servicios-p{
     color: #707070;
-    font-size: 2rem;
+    font-size: rem;
 }
 
 .servicios-contenedor{
     display: flex;
     flex-direction: column;
-    background: var(--primario);
+    background: var(--blanco);
     border-radius: 4rem;
+    width: 35rem;
     text-align: center;
     padding: 2rem 5rem;
+    align-items: center;
 }
 
+.borde h3{
+    padding: 2rem;
+}
 
+.borde p{
+    padding-bottom: 3rem;
+}
+
+.cuadro-rojo{
+    background: var(--primario);
+    border-radius: 2rem;
+}
+
+.contenido .imgS{
+    background-image: url(../img/logo_blanco.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 10rem;
+    width: 10rem;
+    position: relative;
+}
+
+.contenido a:hover{
+    color: var(--blanco);
+    background-color: #af4040;
+    cursor: pointer;
+}
