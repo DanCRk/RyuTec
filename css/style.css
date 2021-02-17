@@ -23,6 +23,24 @@ body {
     font-size: 16px; /* 1 rem equivale a 10px*/
 }
 
+.centrar{
+    text-align: center;
+}
+
+.boton {
+    background-color: var(--primario);
+    color: var(--blanco);
+    padding: 1rem 3rem;
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 4rem;
+    width: 80%;
+    text-align: center;
+}
+
 /* ESTILOS MENU */
 .flex{
     display: flex;
@@ -56,7 +74,6 @@ body {
     color: var(--blanco);
     background-color: var(--primario);
     cursor: pointer;
-    border-radius: 25%;
 }
 header{
     position: fixed;
@@ -90,3 +107,33 @@ header{
 .portada .imgP img{
     width: 68rem;
 }
+
+/*  SERVICIOS */
+
+.contenido{
+    display: flex;
+    padding: 5rem 4rem;
+    justify-content: space-evenly;
+}
+
+.servicios h2{
+    padding-bottom: 2rem;
+    font-weight: normal;
+    font-size: 3rem;
+}
+
+.servicios-p{
+    color: #707070;
+    font-size: 2rem;
+}
+
+.servicios-contenedor{
+    display: flex;
+    flex-direction: column;
+    background: var(--primario);
+    border-radius: 4rem;
+    text-align: center;
+    padding: 2rem 5rem;
+}
+
+
