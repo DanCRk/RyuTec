@@ -149,9 +149,9 @@ header{
     flex-direction: column;
     background: var(--blanco);
     border-radius: 4rem;
-    width: 35rem;
+    width: 30rem;
     text-align: center;
-    padding: 2rem 5rem;
+    padding: 0 5rem 4rem 5rem;
     align-items: center;
 }
 
@@ -171,10 +171,10 @@ header{
 .contenido .imgS{
     background-image: url(../img/logo_blanco.png);
     background-repeat: no-repeat;
-    background-size: cover;
-    height: 10rem;
-    width: 10rem;
-    position: relative;
+    padding: 1rem;
+    background-size: 25rem;
+    height: 25rem;
+    width: 30rem;
 }
 
 .contenido a:hover{
