@@ -92,7 +92,7 @@ header{
 
 .portada{
     width: 120rem;
-    height: 100rem;
+    height: 83rem;
 }
 .portada .titulo{
     width: 60rem;
@@ -101,14 +101,17 @@ header{
     font-weight: 400;
     display: inline;
     float: left;
+    text-align: center;
+    margin-top: 7rem;
 }
 .portada .titulo span{
     font-weight: 700;
     color: var(--primario);
 }
 .portada .imgP{
-    width: 60rem;
+    width: 50rem;
     padding: 9rem 0rem 5rem 5rem;
+    padding-top: 20rem;
     float: right;
 }
 .portada .imgP img{
@@ -166,19 +169,146 @@ header{
 .cuadro-rojo{
     background: var(--primario);
     border-radius: 2rem;
-}
-
-.contenido .imgS{
-    background-image: url(../img/logo_blanco.png);
-    background-repeat: no-repeat;
-    padding: 1rem;
-    background-size: 25rem;
     height: 25rem;
     width: 30rem;
+}
+
+.imgService{
+    width: 20rem;
+    padding-top: 2rem;
 }
 
 .contenido a:hover{
     color: var(--blanco);
     background-color: #af4040;
     cursor: pointer;
+}
+
+/* PORTAFOLIO */
+
+.portafolio {
+    padding-bottom: 10rem;
+    justify-content: space-evenly;
+}
+
+.portafolio h2{
+    padding-left: 20rem;
+    padding-top: 10rem;
+}
+
+.portafolio_texto{
+    padding-top: 4rem;
+    padding-bottom: 5rem;
+    padding-left: 15rem;
+    font-size: 2rem;
+}
+
+.boton_vermas{
+    margin-left: 15rem;
+}
+
+
+.grid_portafolio{
+    padding-left: 5rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5rem;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 0;
+}
+
+.imgP{
+    width: 100%;
+}
+
+.tercera{
+    grid-column: 2 / 3;
+}
+
+.cuarta {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+}
+
+/* DISEÑO RESPONSIVO */
+
+.diseñogrid{
+    display: grid;
+    justify-content: unsafe;
+    grid-template-columns: repeat(2, 1fr);
+    padding-top: 1rem;
+    gap: 3rem;
+}
+
+.diseño_responsivo{
+    padding-left: 5rem;
+}
+
+.diseño_responsivo h2{
+    padding-left: 18rem;
+    font-size: 3rem;
+}
+
+.diseño_texto{
+    text-align: center;
+    padding-top: 8rem;
+}
+
+.diseño_div_texto{
+    width: 50rem;
+    font-size: 2rem;
+    padding-left: 15rem;
+}
+
+
+/* EQUIPO */
+
+.equipo{
+    align-items: center;
+}
+
+.equipo_h2{
+    text-align: center;
+    padding-top: 8rem;
+    font-size: 2rem;
+}
+
+/* FOOTER */ 
+
+.footer{
+    background: var(--oscuro);
+    padding-bottom: 2rem;
+}
+
+.footer_img{
+    width: 5rem;
+}
+
+.footer_caja{
+    display: flex;
+    align-items: center;
+    color: var(--blanco);
+    justify-content: center;
+    padding-top: 1.5rem;
+    
+}
+
+.footer_caja h2{
+    font-weight: normal;
+    font-size: 2.5rem;
+}
+
+.footer_redes{
+    color: var(--blanco);
+    font-weight: bold;
+    text-align: center;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+
+.footer_demas{
+    color: var(--blanco);
+    text-align: center;
+    font-weight: lighter;
 }
